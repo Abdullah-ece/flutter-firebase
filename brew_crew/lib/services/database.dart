@@ -16,7 +16,7 @@ class DatabaseService {
     });
   }
 
-  // get brews stream (Where we are notified of any change will happen to the Dox stored in Data Base)
+  // get brews stream 
   Stream<QuerySnapshot> get brews {
     return brewCollection.snapshots();
   }
